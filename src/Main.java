@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime la edad de un alumno del centro");
         int edad = sc.nextInt();
-        int suma = edad;
+        int edadTotal = edad;
         int numeroA= 0;
         int Medad=0;
         int medad=0;
@@ -23,12 +23,12 @@ public class Main {
             System.out.println("Dime la siguiente edad");
             edad = sc.nextInt();
             if(edad >= 0) {
-                suma = suma+edad;
-                System.out.println("La suma es "+suma);
+                edadTotal = edadTotal+edad;
+                System.out.println("La suma es "+edadTotal);
             }
         }
         System.out.println("Edad ultima dada es negativa");
-        System.out.println("La media es: "+((float)suma/(float)numeroA)+"años");
+        System.out.println("La media es: "+((float)edadTotal/(float)numeroA)+"años");
         System.out.println("El numero de almnos es: "+numeroA);
         System.out.println("El numero de mayores de edad es: "+Medad);
         System.out.println("El numero de menores: "+medad);
