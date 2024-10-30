@@ -12,7 +12,7 @@ public class Main {
         int Medad=0;
         int medad=0;
 
-        while (edad >= 0) {
+        while (edad >= 0 && edad <= 110) {
             if (edad >= 18) {
                 Medad++;
             }else{
@@ -27,10 +27,14 @@ public class Main {
                 System.out.println("La suma es "+edadTotal);
             }
         }
+        if(edad<0){
         System.out.println("Edad ultima dada es negativa");
-        System.out.println("La media es: "+((float)edadTotal/(float)numeroA)+"años");
+        System.out.println("La media es: "+((float)edadTotal/(float)numeroA)+" años");
         System.out.println("El numero de almnos es: "+numeroA);
         System.out.println("El numero de mayores de edad es: "+Medad);
         System.out.println("El numero de menores: "+medad);
+        }else{
+            System.out.println("El numero de almnos es demasiado grande");
+        }
     }
 }
